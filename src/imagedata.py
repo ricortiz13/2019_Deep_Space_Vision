@@ -1,4 +1,8 @@
 """ @file: imagedata.py
+    
+    ImageData is responsible for capturing each frame from the camera and providing
+    a thresholded value to the imageprocessing.py algorithms.
+
 """
 
 import cv2

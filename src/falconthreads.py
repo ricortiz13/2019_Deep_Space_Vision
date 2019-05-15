@@ -1,6 +1,8 @@
 """ @file: falconthreads.py
     @class: FalconThreads
-    @description:
+
+    falconthreads will define and manage all of the threads in this
+    application.
     
 """
 import threading

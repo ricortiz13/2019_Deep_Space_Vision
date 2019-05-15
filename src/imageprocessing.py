@@ -1,8 +1,8 @@
 """ @file: imageprocessing.py
     @class: ImageProcessingAlgorithm
     @description:
-    Strategy pattern to quickly develop,
-    apply and even implement multiple image processing
+    Strategy pattern to quickly develop
+    and implement multiple image processing
     algorithims on the fly
 """
 
@@ -17,8 +17,11 @@ class ImageProcessingAlgorithm(object):
         raise NotImplementedError
 
 """ @class: BasicAlgorithm
-    @description:
-    Algorithm described here
+
+    Basic algorithm will act as the baseline algorithm.
+    Other algorithms will be developed to improve the performance
+    or evaluate other target conditions or game pieces
+    
 """
 class BasicAlgorithm (ImageProcessingAlgorithm):
     def calculateError(self, experimental, ideal):
@@ -160,7 +163,7 @@ class BasicAlgorithm (ImageProcessingAlgorithm):
                         #TODO For debuggin only. Assign to shared data instead of drawing
                         cv2.circle(self.imgData.frame,(targetX,targetY), 5, (0,0,255), -1)
 
-""" @class: AdvanceAlgorithm
+""" @class: AdvancedAlgorithm
     @description:
     Algorithm described here
 """

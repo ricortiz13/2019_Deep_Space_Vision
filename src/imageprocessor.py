@@ -1,5 +1,5 @@
 """ @file: imageprocessing.py
-    @description:
+
     This file will provide the context for the
     algorithms found in imageprocessing.py
     
