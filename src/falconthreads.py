@@ -147,13 +147,15 @@ class MainThread(FalconThreads):
         """ End all threads
         """
         self.endThread()
-        
 
 
-if __name__=='__main__':
-    import time
+def do_main():
     main = MainThread()
     main.start()
     time.sleep(15)
     main.endThread()
     main.join()
+
+if __name__=='__main__':
+    import time
+    do_main()

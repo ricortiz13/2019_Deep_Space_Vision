@@ -34,3 +34,7 @@
 ### Process Frame
 ### Data Out
 ### Data In
+
+## Run with example video
+main() can be currently found within the src/falconthreads.py file as `do_main()`
+`python3 src/falconthreads.py`
